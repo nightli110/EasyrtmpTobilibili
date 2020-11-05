@@ -1,0 +1,9 @@
+
+[videodir]
+
+dir= pokeman
+video_list = videolist.csv
+
+[rtmp]
+live_address = rtmp://txy.live-send.acg.tv/live-txy/
+live_code = ?streamname=live_XXXXX&key=XXX&schedule=rtmp
