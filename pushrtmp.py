@@ -19,6 +19,8 @@ if os.path.exists(videotxtpath):
     with open(videotxtpath, "r") as videotxt:
         reader = csv.reader(videotxt)
         for line in reader:
+            if len(line)==0:
+                continue
             videolist[int(line[1])] = videodir+'/'+line[0]
     videolistsize = len(videolist)
     while(1):

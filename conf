@@ -1,7 +1,6 @@
-
 [videodir]
 
-dir= pokeman
+dir= E://【Astral Union RAW】Yu-Gi-Oh!GX 1-180 Fin + SP 【DVDrip x264_AC3】
 video_list = videolist.csv
 
 [rtmp]
