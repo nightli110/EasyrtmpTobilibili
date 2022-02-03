@@ -29,7 +29,7 @@ def sortByNum(videoList, index):
 
 
 def getFisrtNum(videoName, index):
-    numlist = re.findall(r'\b\d+\b', videoName)
+    numlist = re.findall(r'(\d+)', videoName)
     if (len(numlist) < 1) or len(numlist) < index:
         return None
     return numlist[index]
