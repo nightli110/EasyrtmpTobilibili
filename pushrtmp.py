@@ -33,9 +33,16 @@ if os.path.exists(videotxtpath):
     videolistsize = len(videolist)
     begin = True
     while(1):
-        for i in range(1, videolistsize+1):
-            if(begin):
-                i = int(continueindex)
+        i=1
+        if (begin):
+            i = int(continueindex)
+            begin = False
+        while(i<=videolistsize):
+            if(i not in videolist.keys()):
+                i=i+1
+                continue
+            print(videolist[i])
+            i=i+1
             ff = FFmpeg(
                 inputs={videolist[i]:'-re '},
                 outputs={rtmp_url:'-vcodec copy -acodec aac -b:a 192k -f flv'}
